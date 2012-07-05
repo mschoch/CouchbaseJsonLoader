@@ -37,5 +37,5 @@ java -cp .:$LAB_ROOT/couchbase/couchbase-client/1.1-dp/couchbase-client-1.1-dp.j
    * [Couchbase 2.0 Java SDK](http://www.couchbase.com/docs/couchbase-sdk-java-1.1/index.html)
    * [Couchbase 2.0 view chapter](http://www.couchbase.com/docs/couchbase-sdk-java-1.1/index.html)
    * [Kiva - what a greate project](http://www.kiva.org/)
-
+   * [Web Json document viewer](http://jsonviewer.stack.hu/)
 

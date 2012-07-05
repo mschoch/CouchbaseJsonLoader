@@ -113,8 +113,6 @@ public class KivaJsonLoader extends CouchbaseJsonLoader{
 	          
 		    	if (classtype.equals(KivaLoans.class))
 		    	{
-		    		System.out.println("KivaLoaner class");
-		    		filePath = "/Users/sharonbarr/Downloads/loans/2.json";
 			    	KivaLoans loans = loansGson.fromJson(new FileReader(filePath), KivaLoans.class);
 					
 			    	String headerJSONEntry = headerGson.toJson(loans.header);
@@ -122,16 +120,16 @@ public class KivaJsonLoader extends CouchbaseJsonLoader{
 
 			    	
 		    		for (KivaLoans.Loan entry : loans.loans) {
-		    			
+		    			entry.type="loan";
 		    			String JSONentry = lendersGson.toJson(entry);
-		    			if (entry == null || entry.loan_id == null)
+		    			if (entry == null || entry.id == null)
 		    			{
 		    				System.out.println("bad entry"+entry);
 		    				continue;
 		    			}
 		    			for (int i=0;i<1;i++)
 		    			{
-		    				c.set(entry.loan_id+"_"+i, 0, JSONentry).get();
+		    				c.set(entry.id+"_"+i, 0, JSONentry).get();
 		        
 		    				counter++;
 		    				totalRecords++;

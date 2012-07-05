@@ -5,9 +5,9 @@ public class KivaLoans {
 	
 	class Loan {
 		  String type="loan";
-		  String loan_id;      
+		  String id;      
 		  String name;     
-		  String description;   
+		  Description description;   
 		  String status;    
 		  String funded_amount;   
 		  String basket_amount;
@@ -76,7 +76,7 @@ public class KivaLoans {
 		
 		
 	}
-	class Desctription {
+	class Description {
 		  String disbursal_date;
 		  String disbursal_currency;
 		  String disbursal_amount;

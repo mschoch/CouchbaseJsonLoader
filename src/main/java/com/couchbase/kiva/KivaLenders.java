@@ -1,3 +1,4 @@
+package com.couchbase.kiva;
 
 public class KivaLenders {
 	KivaHeader header;

@@ -1,3 +1,5 @@
+package com.couchbase.kiva;
+
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
